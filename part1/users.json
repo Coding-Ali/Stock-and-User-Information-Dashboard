@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "user": {
+      "firstname": "Jacquette",
+      "lastname": "Marion",
+      "email": "jmarion0@nyu.edu",
+      "address": "207 Ryan Avenue",
+      "city": "Lubbock",
+      "state": "Texas",
+      "zip": "79491"
+    },
+    "portfolio": [
+      { "model": "MacBook Pro", "owned": 2 },
+      { "model": "iMac 2020", "owned": 1 }
+    ]
+  },
+  {
+    "id": 2,
+    "user": {
+      "firstname": "Vaughan",
+      "lastname": "Main",
+      "email": "vmain1@alexa.com",
+      "address": "56 Loeprich Drive",
+      "city": "Midland",
+      "state": "Texas",
+      "zip": "79705"
+    },
+    "portfolio": [
+      { "model": "Dell XPS", "owned": 5 }
+    ]
+  },
+  {
+    "id": 3,
+    "user": {
+      "firstname": "Micheal",
+      "lastname": "jets",
+      "email": "Mjet@Air.com",
+      "address": "303 Beverly Avenue",
+      "city": "Los Angeles",
+      "state": "California",
+      "zip": "39739"
+    },
+    "portfolio": [
+      { "model": "Dell Alienware", "owned": 2}
+    ]
+  }
+]

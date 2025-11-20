@@ -1,0 +1,34 @@
+[
+  {
+    "model": "MacBook Pro",
+    "name": "Apple MacBook Pro 2021",
+    "category": "Laptop",
+    "specifications": "M1 Pro, 16GB RAM, 1TB SSD",
+    "manufacturer": "Apple Inc.",
+    "address": "Cupertino, California, USA"
+  },
+  {
+    "model": "iMac 2020",
+    "name": "Apple iMac 27-inch 2020",
+    "category": "Desktop",
+    "specifications": "Intel Core i9, 32GB RAM, 1TB SSD",
+    "manufacturer": "Apple Inc.",
+    "address": "Cupertino, California, USA"
+  },
+  {
+    "model": "Dell XPS",
+    "name": "Dell XPS 13 9310",
+    "category": "Laptop",
+    "specifications": "Intel Core i7, 16GB RAM, 512GB SSD",
+    "manufacturer": "Dell Inc.",
+    "address": "Round Rock, Texas, USA"
+  },
+  {
+    "model": "Dell Alienware",
+    "name": "Dell Alienware 2021",
+    "category": "Laptop",
+    "specifications": "Intel Core i9, 32GB RAM, 1TB SSD",
+    "manufacturer": "Dell Inc.",
+    "address": "Round Rock, Texas, USA"
+  }
+]

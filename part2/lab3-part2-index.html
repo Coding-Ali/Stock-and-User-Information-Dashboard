@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Information Viewer</title>
+    <link href="normalize.css" rel="stylesheet">
+    <link href="lab3-part2.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1>Computer Information Viewer</h1>
+    <nav>
+        <a href="../part1/index.html">Computer Stock Dashboard</a>
+    </nav>
+</header>
+<main>
+    <aside>
+        <h2>Filter Options</h2>
+        <label for="computerList">Choose a Computer Model:</label>
+        <select id="computerList">
+            <option value="">Select Model</option>
+        </select>
+        <label for="categoryList">Filter by Category:</label>
+        <select id="categoryList">
+            <option value="">All Categories</option>
+            <option value="Laptop">Laptop</option>
+            <option value="Desktop">Desktop</option>
+        </select>
+        <label for="txtFilter">Filter by Specifications:</label>
+        <input type="text" id="txtFilter" placeholder="Enter specifications...">
+        <button id="btnFilter">Apply Filter</button>
+    </aside>
+    <section>
+        <div class="details-header">
+            <h2>Computer Model Details</h2>
+            <select id="sortList" class="sort-dropdown">
+                <option value="">Sort By</option>
+                <option value="popularity">Popularity</option>
+                <option value="releaseDate">Release Date</option>
+            </select>
+        </div>
+        <div id="computerDetails">
+            <p>Select a model to see the details!!.</p>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>Seyedali Samiei Kashi</p>
+    <p><a href="mailto:Ssamieik@uwo.ca">Ssamieik@uwo.ca</a></p>
+</footer>
+<script src="lab3-part2.js"></script>
+</body>
+</html>

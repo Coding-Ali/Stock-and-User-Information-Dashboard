@@ -1,0 +1,22 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# Editor-specific directories/files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Optional: Ignore backup files
+*.bak
+*.old
+*.orig
+ 

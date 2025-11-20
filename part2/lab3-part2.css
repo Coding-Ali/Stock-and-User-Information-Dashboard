@@ -1,0 +1,218 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body, html {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+body {
+   background-color: white;
+   font-family: 'Roboto Condensed', sans-serif;
+   font-size: 1em;
+   font-weight: 400;
+}
+header {
+   background-color: rgb(5, 3, 71);
+   padding: 0.5em;
+   text-align: center;
+}
+nav {
+   background-color: #ffffff;
+   width: 180px;
+   border-radius: 20px;
+   padding: 5px;
+   position: absolute;
+   top: 20px;
+   left: 20px;
+   text-align: center;
+}
+nav a {
+   color: rgb(5, 3, 71);
+   font-weight: bold;
+   text-decoration: none;
+   font-size: 16px;
+}
+nav a:hover {
+   color: rgb(43, 212, 206) ;
+}
+h1, h2, h3 {
+   font-weight: 300;
+   color: white;
+}
+h1 {
+   font-size: 1.5em;
+}
+h2 {
+   background-color: rgb(43, 212, 206);
+   padding: 0.5em;
+   font-size: 1.2em;
+   margin: 0;
+   color: black;
+   text-align: center;
+   border-radius: 8px;
+}
+h3 {
+   color: #353432;
+}
+main {
+   display: grid;
+   grid-template-columns: 0.3fr 1fr;
+   gap: 1em;
+   padding: 20px;
+   flex: 1;
+}
+aside {
+   background-color: white;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px #696662;
+   padding: 20px;
+}
+aside select, aside input, aside button {
+   width: 100%;
+   margin-top: 10px;
+   padding: 10px;
+   border-radius: 5px;
+   border: 1px solid #353432;
+   font-size: 1em;
+   cursor: pointer;
+}
+aside input{
+   cursor: text;
+}
+aside select:hover {
+   background-color: rgb(5, 3, 71);
+   color: white;
+}
+button {
+   background-color: rgb(5, 3, 71);
+   color: white;
+   font-weight: bold;
+   font-size: 1em;
+   padding: 0.8em 1.2em;
+   border: none;
+   border-radius: 8px;
+   transition: background-color 0.3s, color 0.3s;
+   cursor: pointer;
+}
+button:hover {
+   background-color: rgb(43, 212, 206) !important;
+   color: black !important;
+}
+section {
+   background-color: white;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px #696662;
+   padding: 20px;
+}
+#computerList, #categoryList, #txtFilter {
+   margin-bottom: 1em;
+}
+#detailsHere {
+   padding-top: 20px;
+}
+.computer-item {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+   padding: 10px;
+   background-color: #f4f3f2;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   transition: background-color 0.3s, color 0.3s;
+}
+.computer-item h3 {
+   color: #353432;
+   transition: color 0.3s;
+}
+.computer-item:hover {
+   background-color: rgb(5, 3, 71);
+   color: white;
+}
+.computer-item:hover h3 {
+   color: white;
+}
+.computer-image {
+   width: 150px;
+   height: auto;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.filters-text {
+   background-color: #e0f7fa;
+   color: #00796b;
+   padding: 10px;
+   border-radius: 5px;
+   font-weight: bold;
+   margin-bottom: 10px;
+}
+.details-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.sort-dropdown {
+   padding: 5px;
+   font-size: 1em;
+   border-radius: 5px;
+   border: 1px solid #353432;
+   background-color: #f4f3f2e0;
+}
+#sortList {
+   width: 200px;
+   margin-top: 10px;
+   padding: 10px;
+   border-radius: 5px;
+   border: 1px solid #353432;
+   font-size: 1em;
+   background-color: rgb(5, 3, 71);
+   color: white;
+   font-weight: bold;
+   cursor: pointer;
+}
+#sortList option {
+   background-color: white;
+   color: black;
+}
+footer {
+   text-align: center;
+   padding: 20px;
+   background-color: rgb(5, 3, 71);
+   color: white;
+   margin-top: auto;
+}
+footer a {
+   color: white;
+}
+@media (max-width: 1024px) {
+   main {
+     grid-template-columns: 1fr;
+   }
+}
+@media (max-width: 768px) {
+   aside, section {
+     padding: 15px;
+   }
+   button {
+     padding: 0.6em 1em;
+     font-size: 0.9em;
+   }
+   .modal-content {
+     width: 90%;
+   }
+}
+@media (max-width: 480px) {
+   h1 {
+     font-size: 1.2em;
+   }
+   h2 {
+     font-size: 1em;
+     padding: 0.3em;
+   }
+   aside select, aside input, aside button {
+     padding: 0.6em;
+   }
+}

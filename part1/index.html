@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Stock Dashboard</title>   
+    <link href="normalize.css" rel="stylesheet">
+    <link href="lab3-p1.css" rel="stylesheet">
+</head>
+<body>
+<header>
+   <h1>Computer Stock Dashboard</h1>
+   <nav>
+        <a href="../part2/lab3-part2-index.html">Computer Information Viewer</a>
+   </nav>
+</header>
+<main class="container">
+    <section class="UserList">
+       <h2>Users</h2>
+       <ul id="userList"></ul>
+    </section>
+    <section class="Form">
+       <div class="UserForm">
+          <h2>User Form</h2>
+            <form class="userEntry">
+               <input type="hidden" id="userID">
+               <label for="firstname">First Name</label>
+               <input type="text" id="firstname" class="one" placeholder="Enter First Name">
+               <label for="lastname">Last Name</label>
+               <input type="text" id="lastname" class="two" placeholder="Enter Last Name">
+               <label for="address">Address</label>
+               <input type="text" id="address" class="one" placeholder="Street Address">
+               <label for="address2">Address Line 2</label>
+               <input type="text" id="address2" class="two" placeholder="Apartment, suite, unit, etc. (optional)">
+               <label for="email">Email</label>
+               <input type="email" id="email" class="both" placeholder="Enter Email">
+               <div class="form-buttons">
+                  <button id="btneditSave" type="button">Edit&Save</button>
+                  <button id="btnDelete" type="button">Delete</button>
+                  <button id="btnReset" type="button">Reset</button>
+                  <button id="btnCreate" type="button">New User</button>
+               </div>
+            </form>
+       </div>
+       <div class="Information">
+         <div class="Portfolio">
+             <h2>Portfolio</h2>
+             <div id="listPortfolio"><!--will be here by js-->
+             </div>
+         </div>
+         <div class="Details">
+             <h2>Details</h2>
+             <div id="singleStock">
+                 <div class="Label-row">
+                     <p><span class="DetailsLabel">Stock Name:</span> <span id="stockName"></span></p>
+                 </div>
+                 <div class="Label-row">
+                     <p><span class="DetailsLabel">Stock Category:</span> <span id="stockCategory"></span></p>
+                 </div>   
+                 <div class="Label-row">
+                     <p><span class="DetailsLabel">Stock Specs:</span> <span id="stockSpecs"></span></p>
+                 </div>
+                 <div class="Label-row">
+                     <p><span class="DetailsLabel">Stock Manufacturer:</span> <span id="stockManufacturer"></span></p>
+                 </div>
+             </div>
+         </div>
+     </div>
+    </section>
+</main>
+<div id="customAlert" class="modal"><!--cutom ALert for buttons-->
+   <div class="modal-content">
+       <p id="alertMessage"></p>
+       <button onclick="closeAlert()">OK</button>
+   </div>
+</div>
+<footer>
+   <p>Seyedali Samiei Kashi</p>
+   <p><a href="mailto:Ssamieik@uwo.ca">Ssamieik@uwo.ca</a></p>
+</footer>
+<script src="lab3-p1.js"></script>
+</body>
+</html>

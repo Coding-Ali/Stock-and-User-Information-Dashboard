@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+header {
+  background-color:  rgb(5, 3, 71);
+  padding: 0.5em;
+  text-align: center;
+}
+nav {
+  background-color: #ffffff;
+  width: 180px;
+  border-radius: 20px;
+  padding: 5px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-align: center;
+}
+nav a {
+  color: rgb(5, 3, 71);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+}
+nav a:hover {
+  color: rgb(43, 212, 206) ;
+}
+h1, h2, h3 {
+  font-weight: 300;
+  color: white;
+}
+h1 {
+  font-size: 1.5em;
+}
+h2 {
+  background-color:rgb(43, 212, 206);
+  padding: 0.5em;
+  font-size: 1.2em;
+  margin: 0;
+  color: black;
+  text-align: center;
+  border-radius: 8px;
+}
+h3 {
+  color: #353432;
+}
+.container {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
+  grid-template-areas: "UserList Details";
+  gap: 1em;
+  padding: 20px;
+}
+.UserList {
+  grid-area: UserList;
+  background-color:white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px#696662;
+  padding: 20px;
+}
+.UserList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.UserList ul li {
+  padding: 0.5em;
+  cursor: pointer;
+  background-color: #f4f3f2e0;
+  border: 1px solid white;
+  border-radius: 8px;
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+}
+.UserList ul li:hover {
+  background-color:  rgb(5, 3, 71);
+  color: white;
+}
+.Form {
+  display: grid;
+  grid-template-rows: 0.5fr 1.5fr;
+  grid-template-areas: "UserForm" "Portfolio";
+  gap: 1em;
+  grid-area: Details;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+.UserForm {
+  grid-area: UserForm;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px #696662;
+}
+.userEntry {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  grid-gap: 0.8em;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  align-items: center;
+}
+.userEntry label {
+  grid-column: 1;
+
+  font-weight: bold;
+  color: #353432;
+}
+.userEntry input {
+  padding: 1em;
+  border: 1px solid #353432;
+  border-radius: 4px;
+  font-size: 1em;
+}
+.form-buttons {
+  grid-column: 2 / 4;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+}
+button {
+  background-color: rgb(5, 3, 71);
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 0.8em 1.2em;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+  flex: 1;
+}
+button:hover {
+  background-color: rgb(43, 212, 206) !important;
+  color: black !important;
+  cursor: pointer;
+}
+button#btnSave {
+  background-color: rgb(5, 3, 71);
+}
+button#btnDelete {
+  background-color: rgb(5, 3, 71);
+}
+.Information {
+  display: grid;
+  grid-template-columns: 0.6fr 1.4fr;
+  grid-template-areas: "StockList StockDetails";
+  gap: 1em;
+  grid-area: Portfolio;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+.Portfolio {
+  margin-top: 20px;
+  box-shadow: 0 4px 8px #696662;
+  padding: 10px;
+  border-radius: 8px;
+}
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.portfolio-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.Details {
+  margin-top: 20px;
+  box-shadow: 0 4px 8px #696662;
+  padding: 10px;
+  border-radius: 8px;
+}
+#singleStock {
+  display: grid;
+  gap: 10px;
+}
+.Label-row {
+  display: flex;
+  align-items: center;
+}
+.DetailsLabel {
+  font-weight: bold;
+  margin-right: 5px;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #353432;
+  width: 80%;
+  max-width: 300px;
+  text-align: center;
+  border-radius: 10px;
+}
+.modal-content button {
+  background-color: rgb(43, 212, 206);
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+.modal-content button:hover {
+  background-color: rgb(34, 180, 175);
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color:  rgb(5, 3, 71);
+  color: white;
+  margin-top: 20px;
+}
+footer a{
+  color: white;
+}
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "UserList"
+      "Details";
+  }
+  .Information {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .Form {
+    grid-template-rows: auto;
+  }
+  .userEntry {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+  .form-buttons {
+    flex-direction: column;
+  }
+  button {
+    padding: 0.6em 1em;
+    font-size: 0.9em;
+  }
+  .modal-content {
+    width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2em;
+  }
+  h2 {
+    font-size: 1em;
+    padding: 0.3em;
+  }
+  .form-buttons {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .Portfolio, .Details {
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .Information {
+    grid-template-columns: 1fr;
+  }
+}

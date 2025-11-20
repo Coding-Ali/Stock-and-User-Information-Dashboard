@@ -1,0 +1,27 @@
+[
+    {
+      "model": "macbook-pro-2021",
+      "name": "Apple MacBook Pro 2021",
+      "category": "laptop",
+      "specifications": "M1 Pro, 16GB RAM, 1TB SSD",
+      "manufacturer": "Apple",
+      "description": "A high-performance laptop for professionals."
+    },
+    {
+      "model": "dell-xps-13",
+      "name": "Dell XPS 13",
+      "category": "laptop",
+      "specifications": "Intel Core i7, 16GB RAM, 512GB SSD",
+      "manufacturer": "Dell",
+      "description": "Compact and powerful, perfect for on-the-go productivity."
+    },
+    {
+      "model": "hp-pavilion-15",
+      "name": "HP Pavilion 15",
+      "category": "laptop",
+      "specifications": "Intel Core i5, 8GB RAM, 1TB HDD",
+      "manufacturer": "HP",
+      "description": "A reliable laptop for everyday tasks."
+    }
+  ]
+  
